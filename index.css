@@ -19,7 +19,7 @@ li {
 }
 
 li a {
-    
+    font-weight: bold;
     display: block;
     color: white;
     text-align: center;
