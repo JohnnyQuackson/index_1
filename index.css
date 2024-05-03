@@ -23,21 +23,23 @@ main {
 
 .navbar {
     position: absolute;
+    height: 100%;
     top: 0;
     bottom: 0;
-    height: 100%;
     left: 0;
-    width: 3%;
+    width: 80px;
     transition: width 0.2s linear;
     background-color: #446778;
     overflow: hidden;
 }
 .navbar:hover {
-    width: 10%;
+    width: 210px;
     transition: all 0.5s ease;
 }
 
 .navbar ul{
+    height: 100%;
+    position: relative;
     list-style-type: none;
     text-align: left;
 }
@@ -61,6 +63,7 @@ main {
 }
 
 .navbar li img {
+    flex-shrink: 0;
     width: 52px;
     height: 52px;
     top: 14px;
@@ -68,6 +71,7 @@ main {
 }
 
 .nav-item {
+    flex-shrink: 0;
     position: relative;
     margin-left: 15px;
     top: 12px;
