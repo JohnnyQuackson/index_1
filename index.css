@@ -1,54 +1,101 @@
-body {
+* {
     font-family: 'Montserrat', sans-serif;
-}
-
-li {
-    float: left;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #179CDE;
-    border-radius: 15px;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    font-weight: bold;
-    display: block;
     color: white;
-    text-align: center;
-    padding: 16px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
     text-decoration: none;
 }
 
-.home {
+::selection {
+    background-color: #4a7082;
+}
+
+body {
+    background-color: #2e4d5d;
+}
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 3%;
+    transition: width 0.2s linear;
+    background-color: #446778;
+    overflow: hidden;
+}
+.navbar:hover {
+    width: 10%;
+    transition: all 0.5s ease;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.navbar li {
+    float: center;
+}
+
+.navbar a {
+    font-size: 150%;  
+    text-align: center;  
+    display: flex;
     font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.navbar a:hover {
+    background-color: #4a7082;
+}
+
+.navbar li img {
+    width: 52px;
+    height: 52px;
+    top: 14px;
+    float: left;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 15px;
+    top: 12px;
+}
+
+.home {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    padding: 20px;
 }
 
 .dog {
-    color: #FFFFFF;
     font-weight: bold;
     font-size: 175%;
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    background-color: #179CDE;
+    background-color: #446778;
     padding: 20px;
     max-width: 300px;
     margin: 0 auto;
 }
-.site {
-    background-color: #FFFFFF;
-}
+
 .remove_underline {
     text-decoration: none;
 }
+
 .monkey_image {
     border-radius: 15px;
     display: block;
@@ -56,4 +103,9 @@ li a {
     margin-right: auto;
     max-width:100%;
     height:auto;
+}
+
+.about {
+    position: absolute;
+    bottom: 0;
 }
